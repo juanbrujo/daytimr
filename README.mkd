@@ -20,4 +20,8 @@ Settings:
    	'morningStart' : '7:00', 		// time when morning starts, must be HH:MM (if it is >= 9 don't use the 0)
    	'afternoonClass': 'afternoon', 	// name of the class used if it is afternoon time
    	'afternoonStart': '12:00', 		// time when afternoon starts, must be HH:MM (if it is >= 9 don't use the 0)
-   	'debug' : false					// if true show what's going on in the browser's console	
+   	'debug' : false,				// if true show what's going on in the browser's console
+   	onNight	: function(){},			// callback if it is night
+	onDawn : function(){},			// callback if it is dawn
+	onMorning : function(){},		// callback if it is morning
+	onAfternoon : function(){}		// callback if it is afternoon
