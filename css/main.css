@@ -57,12 +57,258 @@ textarea {
 
 
 /* ==========================================================================
-   Author's custom styles
+   JuanBrujo styles
    ========================================================================== */
 
+body {
+	font-family: 	Cambria, Georgia, serif;
+	font-size: 		14px;
+	text-shadow: 	rgba(0,0,0,0.7) 1px 1px 2px;
+	color: 			#fff;
+	background: 	#c9dbe9;
+	background: 	-webkit-gradient(top, #c9dbe9 0%, #fff 100%);
+	-moz-background:gradient(top, #c9dbe9 0%, #fff 100%);
+	-o-background: 	gradient(top, #c9dbe9 0%, #fff 100%);
+	-ms-background: gradient(top, #c9dbe9 0%, #fff 100%);
+	background: 	gradient(top, #c9dbe9 0%, #fff 100%);
+}
+	body.morning {
+		background: 	#c9dbe9;
+		background: 	-webkit-gradient(top, #c9dbe9 0%, #fff 100%);
+		-moz-background:gradient(top, #c9dbe9 0%, #fff 100%);
+		-o-background: 	gradient(top, #c9dbe9 0%, #fff 100%);
+		-ms-background: gradient(top, #c9dbe9 0%, #fff 100%);
+		background: 	gradient(top, #c9dbe9 0%, #fff 100%);
+	}
+	body.afternoon {
+		background: 	#b5cbec;
+		background: 	-webkit-gradient(top, #b5cbec 0%, #fff 100%);
+		-moz-background:gradient(top, #b5cbec 0%, #fff 100%);
+		-o-background: 	gradient(top, #b5cbec 0%, #fff 100%);
+		-ms-background: gradient(top, #b5cbec 0%, #fff 100%);
+		background: 	gradient(top, #b5cbec 0%, #fff 100%);
+	}
+	body.night {
+		background: 	#50545a;
+		background: 	-webkit-gradient(top, #50545a 0%, #fff 100%);
+		-moz-background:gradient(top, #50545a 0%, #fff 100%);
+		-o-background: 	gradient(top, #50545a 0%, #fff 100%);
+		-ms-background: gradient(top, #50545a 0%, #fff 100%);
+		background: 	gradient(top, #50545a 0%, #fff 100%);
+	}
+	body.dawn {
+		background: 	#24262a;
+		background: 	-webkit-gradient(top, #24262a 0%, #fff 100%);
+		-moz-background:gradient(top, #24262a 0%, #fff 100%);
+		-o-background: 	gradient(top, #24262a 0%, #fff 100%);
+		-ms-background: gradient(top, #24262a 0%, #fff 100%);
+		background: 	gradient(top, #24262a 0%, #fff 100%);
+	}
+	
+	.cuerpoceleste {
+		width: 				200px;
+		height: 			200px;
+		border-radius: 		200px;
+		position: 			fixed;
+		right: 10%;
+		top: 10%;
+		background-color: 	#ffde00;
+		-webkit-box-shadow: #ffde00 0 0 20px;
+		box-shadow: 		#ffde00 0 0 20px;
+	}
+		.morning .cuerpoceleste {
+			top: 40%;
+			background-color: 	#fffc00;
+			-webkit-box-shadow: #fffc00 0 0 20px;
+			box-shadow: 		#fffc00 0 0 20px;
+		}
+			.morning h1 {
+				color: #fffc00;
+			}
+		.afternoon .cuerpoceleste {
+			top: 10%;
+			background-color: 	#ffde00;
+			-webkit-box-shadow: #ffde00 0 0 20px;
+			box-shadow: 		#ffde00 0 0 20px;
+		}
+			.afternoon h1 {
+				color: 	#ffde00;
+			}
+		.night .cuerpoceleste {
+			top: 40%;
+			background-color: 	#bab7a3;
+			-webkit-box-shadow: #bab7a3 0 0 20px;
+			box-shadow: 		#bab7a3 0 0 20px;
+		}
+			.night h1 {
+				color: 	#bab7a3;
+				text-shadow: 0 1px 0 #666,
+				 0 2px 0 #555,
+				 0 3px 0 #444,
+				 0 4px 0 #333,
+				 0 5px 0 #222,
+				 0 6px 1px rgba(0,0,0,.1),
+				 0 0 5px rgba(0,0,0,.1),
+				 0 1px 3px rgba(0,0,0,.3),
+				 0 3px 5px rgba(0,0,0,.2),
+				 0 5px 10px rgba(0,0,0,.25),
+				 0 10px 10px rgba(0,0,0,.2);
+			}
+			.night h2 {
+				text-shadow: 0 1px 0 #666,
+				 0 2px 0 #555,
+				 0 3px 0 #444,
+				 0 4px 0 #333,
+				 0 5px 0 #222,
+				 0 6px 1px rgba(0,0,0,.1),
+				 0 0 5px rgba(0,0,0,.1),
+				 0 1px 3px rgba(0,0,0,.3),
+				 0 3px 5px rgba(0,0,0,.2),
+				 0 5px 10px rgba(0,0,0,.25),
+				 0 10px 10px rgba(0,0,0,.2);
+			}
+			.night h3 {
+				text-shadow: 0 1px 0 #666,
+				 0 2px 0 #555,
+				 0 3px 0 #444,
+				 0 4px 0 #333,
+				 0 5px 0 #222,
+				 0 6px 1px rgba(0,0,0,.1),
+				 0 0 5px rgba(0,0,0,.1),
+				 0 1px 3px rgba(0,0,0,.3),
+				 0 3px 5px rgba(0,0,0,.2),
+				 0 5px 10px rgba(0,0,0,.25),
+				 0 10px 10px rgba(0,0,0,.2);
+			}
+			.night pre span {
+				color: #999;
+				text-shadow: rgba(0,0,0,0.7) 1px 1px 1px;
+				font-size: 0.8em;
+			}
+		.dawn .cuerpoceleste {
+			top: 10%;
+			background-color: 	#c5c4be;
+			-webkit-box-shadow: #c5c4be 0 0 20px;
+			box-shadow: 		#c5c4be 0 0 20px;
+		}
+			.dawn h1 {
+				color: 	#c5c4be;
+				text-shadow: 0 1px 0 #666,
+				 0 2px 0 #555,
+				 0 3px 0 #444,
+				 0 4px 0 #333,
+				 0 5px 0 #222,
+				 0 6px 1px rgba(0,0,0,.1),
+				 0 0 5px rgba(0,0,0,.1),
+				 0 1px 3px rgba(0,0,0,.3),
+				 0 3px 5px rgba(0,0,0,.2),
+				 0 5px 10px rgba(0,0,0,.25),
+				 0 10px 10px rgba(0,0,0,.2);
+			}
+			.dawn h2 {
+				text-shadow: 0 1px 0 #666,
+				 0 2px 0 #555,
+				 0 3px 0 #444,
+				 0 4px 0 #333,
+				 0 5px 0 #222,
+				 0 6px 1px rgba(0,0,0,.1),
+				 0 0 5px rgba(0,0,0,.1),
+				 0 1px 3px rgba(0,0,0,.3),
+				 0 3px 5px rgba(0,0,0,.2),
+				 0 5px 10px rgba(0,0,0,.25),
+				 0 10px 10px rgba(0,0,0,.2);
+			}
+			.dawn h3 {
+				text-shadow: 0 1px 0 #666,
+				 0 2px 0 #555,
+				 0 3px 0 #444,
+				 0 4px 0 #333,
+				 0 5px 0 #222,
+				 0 6px 1px rgba(0,0,0,.1),
+				 0 0 5px rgba(0,0,0,.1),
+				 0 1px 3px rgba(0,0,0,.3),
+				 0 3px 5px rgba(0,0,0,.2),
+				 0 5px 10px rgba(0,0,0,.25),
+				 0 10px 10px rgba(0,0,0,.2);
+			}
+			.dawn pre span {
+				color: #999;
+				text-shadow: rgba(0,0,0,0.7) 1px 1px 1px;
+				font-size: 0.8em;
+			}
 
-
-
+	#container {
+		width: 70%;
+		margin: 0 auto;
+		position: relative;
+		z-index: 10;
+	}
+		#container h1,h2,h3,h4 {
+			margin: 0.5em 0;
+			line-height: 120%;
+		}
+		h1 {
+			text-align: center;
+			font-size: 	5em;
+			font-family:'Grand Hotel', cursive;
+			text-shadow: 0 1px 0 #ccc,
+			 0 2px 0 #c9c9c9,
+			 0 3px 0 #bbb,
+			 0 4px 0 #b9b9b9,
+			 0 5px 0 #aaa,
+			 0 6px 1px rgba(0,0,0,.1),
+			 0 0 5px rgba(0,0,0,.1),
+			 0 1px 3px rgba(0,0,0,.3),
+			 0 3px 5px rgba(0,0,0,.2),
+			 0 5px 10px rgba(0,0,0,.25),
+			 0 10px 10px rgba(0,0,0,.2);
+		}
+		h2 {
+			text-align: center;
+			margin: 1em 15%;
+			font-size: 1.2em;
+			font-weight: normal;
+			text-shadow: 0 1px 0 #ccc,
+			 0 2px 0 #c9c9c9,
+			 0 3px 0 #bbb,
+			 0 4px 0 #b9b9b9,
+			 0 5px 0 #aaa,
+			 0 6px 1px rgba(0,0,0,.1),
+			 0 0 5px rgba(0,0,0,.1),
+			 0 1px 3px rgba(0,0,0,.3),
+			 0 3px 5px rgba(0,0,0,.2),
+			 0 5px 10px rgba(0,0,0,.25),
+			 0 10px 10px rgba(0,0,0,.2);
+		}
+		h3 {
+			font-family:'Grand Hotel', cursive;
+			font-size: 3em;
+			margin-bottom: 0;
+			text-shadow: 0 1px 0 #ccc,
+			 0 2px 0 #c9c9c9,
+			 0 3px 0 #bbb,
+			 0 4px 0 #b9b9b9,
+			 0 5px 0 #aaa,
+			 0 6px 1px rgba(0,0,0,.1),
+			 0 0 5px rgba(0,0,0,.1),
+			 0 1px 3px rgba(0,0,0,.3),
+			 0 3px 5px rgba(0,0,0,.2),
+			 0 5px 10px rgba(0,0,0,.25),
+			 0 10px 10px rgba(0,0,0,.2),
+			 0 20px 20px rgba(0,0,0,.15);
+		}
+		h4 {
+			font-family:'Grand Hotel', cursive;
+			font-size: 2em;
+		}
+		pre {
+			border-left: 4px solid rgba(255,255,255,0.4);
+		}
+			pre span {
+				color: #666;
+				text-shadow: rgba(255,255,255,0.7) 1px 1px 1px;
+				font-size: 0.8em;
+			}
 
 
 

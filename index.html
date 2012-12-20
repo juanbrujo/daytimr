@@ -6,42 +6,47 @@
         <title>jQuery dayTimr</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-
+		
+		<link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/libs/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
+	
+		<div class="cuerpoceleste"></div>
 
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+		<div id="container"><!-- #container -->
+			<h1>jQuery dayTimr <sup>v0.32</sup></h1>
+			<h2>Get and uses the user's current time of the day to bring anything to the website, through a CSS class</h2>
+
+					<h3>Use:</h3>
+					<pre>   $('body').dayTimr(); <span>// use any HTML selector</span></pre>
+
+					<h3>Settings:</h3>
+					<pre>
+   'nightClass' : 'night', <span>// name of the class used if it is night time</span>
+   'nightStart' : '21:00', <span>// time when night starts, must be HH:MM (if it is >= 9 don't use the 0)</span>
+   'dawnClass' : 'dawn', <span>// name of the class used if it is dawn time</span>
+   'dawnStart' : '0:00', <span>// time when dawn starts, must be HH:MM (if it is >= 9 don't use the 0)</span>
+   'morningClass' : 'morning', <span>// name of the class used if it is morning time</span>
+   'morningStart' : '7:00', <span>// time when morning starts, must be HH:MM (if it is >= 9 don't use the 0)</span>
+   'afternoonClass': 'afternoon', <span>// name of the class used if it is afternoon time</span>
+   'afternoonStart': '12:00', <span>// time when afternoon starts, must be HH:MM (if it is >= 9 don't use the 0)</span>
+   'debug' : false	<span>// if true show what's going on in the browser's console</span></pre>
+
+		</div><!-- /#container -->
+		
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/libs/jquery-1.8.3.min.js"><\/script>')</script>
-		<script src="js/jquery.daytime-0.2.js"></script>
+		<script src="js/jquery.dayTimr-0.32.js"></script>
         <script>
 		$(function() {
-			
-			$().dayTimr()
-			
-			// alert(datetoday+' '+timenow+' '+datetoday+' '+thehour);
-			
-			// if (thehour >= 18)
-			// $('body').addClass('evening');
-			// else if (thehour >= 15)
-			// $('body').addClass('afternoon');
-			// else if (thehour >= 12)
-			// $('body').addClass('noon');
-			// else if (thehour >= 7)
-			// $('body').addClass('morning');
-			// else if (thehour >= 0)
-			// $('body').addClass('night');
-			// else
-			// $('body').addClass('general');
-
-		    // create a new instance of the plugin
-		    // $('body').dayTimr();
-
+			$('body').dayTimr({
+				'debug': true
+			});
 		});
 		</script>
     </body>

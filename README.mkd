@@ -1,0 +1,23 @@
+jQuery dayTimr
+=
+
+`Get and uses the user's current time of the day to bring anything to the website, through a CSS class`
+
+**Demo**: <http://www.csslab.cl/ejemplos/dayTimr/latest/>
+
+
+Use:
+-
+	$('body').dayTimr(); 			// use any HTML selector
+
+Settings:
+-
+	'nightClass' : 'night', 		// name of the class used if it is night time
+   	'nightStart' : '21:00', 		// time when night starts, must be HH:MM (if it is >= 9 don't use the 0)
+   	'dawnClass' : 'dawn', 			// name of the class used if it is dawn time
+   	'dawnStart' : '0:00', 			// time when dawn starts, must be HH:MM (if it is >= 9 don't use the 0)
+   	'morningClass' : 'morning', 	// name of the class used if it is morning time
+   	'morningStart' : '7:00', 		// time when morning starts, must be HH:MM (if it is >= 9 don't use the 0)
+   	'afternoonClass': 'afternoon', 	// name of the class used if it is afternoon time
+   	'afternoonStart': '12:00', 		// time when afternoon starts, must be HH:MM (if it is >= 9 don't use the 0)
+   	'debug' : false					// if true show what's going on in the browser's console	
