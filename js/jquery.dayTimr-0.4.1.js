@@ -108,7 +108,7 @@
 						window.console && console.log("It's morning now");
 					}
 					$this.addClass(settings.morningClass);
-					settings.onMorningcall(this);
+					settings.onMorning.call(this);
 			}
 			// afternoon
 			if (
