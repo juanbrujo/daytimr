@@ -1,2 +1,4 @@
-
 js/.DS_Store
+Gruntfile.js
+package.json
+node_modules/

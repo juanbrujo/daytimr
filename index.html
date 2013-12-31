@@ -1,57 +1,56 @@
 <!DOCTYPE html>
 <html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>jQuery dayTimr</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-		
-		<link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>jQuery dayTimr</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
 
-        <script src="js/libs/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>
+  <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/libs/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
 	
-		<div class="cuerpoceleste"></div>
+	<div class="cuerpoceleste"></div>
 
-		<div id="container"><!-- #container -->
-			<h1>jQuery dayTimr <sup>v0.4.1</sup></h1>
-			<h2>Get and uses the user's current time of the day to bring anything to the website, through a CSS class</h2>
+	<div id="container"><!-- #container -->
+		<h1>jQuery dayTimr <sup>v1.0</sup></h1>
+		<h2>Get and uses the user's current time of the day to do anything to the current page using a simple callback.</h2>
 
-					<h3>Use:</h3>
-					<pre>   $('body').dayTimr(); <span>// use any HTML selector</span></pre>
+				<h3>Use:</h3>
+				<pre>  $('body').dayTimr(); <span>// use any HTML selector</span></pre>
 
-					<h3>Settings:</h3>
-					<pre>
-   'nightClass' : 'night', <span>// name of the class used if it is night time</span>
-   'nightStart' : '21:00', <span>// time when night starts, must be HH:MM (if it is >= 9 don't use the 0)</span>
-   'dawnClass' : 'dawn', <span>// name of the class used if it is dawn time</span>
-   'dawnStart' : '0:00', <span>// time when dawn starts, must be HH:MM (if it is >= 9 don't use the 0)</span>
-   'morningClass' : 'morning', <span>// name of the class used if it is morning time</span>
-   'morningStart' : '7:00', <span>// time when morning starts, must be HH:MM (if it is >= 9 don't use the 0)</span>
-   'afternoonClass': 'afternoon', <span>// name of the class used if it is afternoon time</span>
-   'afternoonStart': '12:00', <span>// time when afternoon starts, must be HH:MM (if it is >= 9 don't use the 0)</span>
-   'debug' : false,	<span>// if true show what's going on in the browser's console</span>
-   onNight	: function(){},	<span>// callback if it is night</span>
-   onDawn : function(){}, <span>// callback if it is dawn</span>
-   onMorning : function(){}, <span>// callback if it is morning</span>
-   onAfternoon : function(){} <span>// callback if it is afternoon</span></pre>
+				<h3>Settings:</h3>
+				<pre>
+  'nightClass'     : 'night',<span>      // name of the class used if it is night time</span>
+  'nightStart'     : '21:00',<span>      // time when night starts, must be HH:MM (if it is >= 9 don't use the 0)</span>
+  'dawnClass'      : 'dawn',<span>       // name of the class used if it is dawn time</span>
+  'dawnStart'      : '0:00',<span>       // time when dawn starts, must be HH:MM (if it is >= 9 don't use the 0)</span>
+  'morningClass'   : 'morning',<span>    // name of the class used if it is morning time</span>
+  'morningStart'   : '7:00',<span>       // time when morning starts, must be HH:MM (if it is >= 9 don't use the 0)</span>
+  'afternoonClass' : 'afternoon',<span>  // name of the class used if it is afternoon time</span>
+  'afternoonStart' : '12:00',<span>      // time when afternoon starts, must be HH:MM (if it is >= 9 don't use the 0)</span>
+  'debug'          : false,<span>        // if true show what's going on in the browser's console</span>
+  onNight          : function(){},<span> // callback if it is night; default it adds the <em>nightClass</em> to the &lt;body&gt;.</span>
+  onDawn           : function(){},<span> // callback if it is dawn; default it adds the <em>dawnClass</em> to the &lt;body&gt;.</span>
+  onMorning        : function(){},<span> // callback if it is morning; default it adds the <em>morningClass</em> to the &lt;body&gt;.</span>
+  onAfternoon      : function(){}<span>  // callback if it is afternoon; default it adds the <em>afternoonClass</em> to the &lt;body&gt;.</span>
+</pre>
 
-		</div><!-- /#container -->
+	</div><!-- /#container -->
 		
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/libs/jquery-1.8.3.min.js"><\/script>')</script>
-		<script src="js/jquery.dayTimr-0.4.1.js"></script>
-        <script>
-		$(function() {
-			$('body').dayTimr({
-				'debug': true
-			});
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.8.3.min.js"><\/script>')</script>
+  <script src="js/jquery.dayTimr-1.0.min.js"></script>
+  <script>
+		$('body').dayTimr({
+			'debug': true
 		});
-		</script>
-    </body>
+	</script>
+</body>
 </html>

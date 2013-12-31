@@ -1,7 +1,7 @@
 jQuery dayTimr
 =
 
-`Get and uses the user's current time of the day to bring anything to the website, through a CSS class`
+`Get and uses the user's current time of the day to do anything to the current page using a simple callback`
 
 **Demo**: <http://www.csslab.cl/ejemplos/dayTimr/latest/>
 
@@ -21,7 +21,7 @@ Settings:
    	'afternoonClass': 'afternoon', 	// name of the class used if it is afternoon time
    	'afternoonStart': '12:00', 		// time when afternoon starts, must be HH:MM (if it is >= 9 don't use the 0)
    	'debug' : false,				// if true show what's going on in the browser's console
-   	onNight	: function(){},			// callback if it is night
-	onDawn : function(){},			// callback if it is dawn
-	onMorning : function(){},		// callback if it is morning
-	onAfternoon : function(){}		// callback if it is afternoon
+   	onNight	: function(){},			// callback if it is night; default it adds the nightClass to the body
+	onDawn : function(){},			// callback if it is dawn; default it adds the dawnClass to the body
+	onMorning : function(){},		// callback if it is morning; default it adds the morningClass to the body
+	onAfternoon : function(){}		// callback if it is afternoon; default it adds the afternoonClass to the body

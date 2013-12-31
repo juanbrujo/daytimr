@@ -1,7 +1,9 @@
+//////////////////////////////////////////////////
 // jQuery dayTimr
 // Get and uses the user's current time of the day to bring anything to the website, through a CSS class.
-// version 0.4, Dec 2012
+// version 1.0, Dec 2013
 // by @csslab | www.csslab.cl
+//////////////////////////////////////////////////
 
 ;(function($){ 
 	$.fn.dayTimr = function(options) {
@@ -15,10 +17,18 @@
 			'afternoonClass': 'afternoon',	// name of the class used if it is afternoon time
 			'afternoonStart': '12:00',		// time when afternoon starts, must be HH:MM (if it is >= 9 don't use the 0)
 			'debug'			: false,		// if true show what's going on in the browser's console
-			onNight			: function(){},	// callback if it is night
-			onDawn			: function(){},	// callback if it is dawn
-			onMorning		: function(){},	// callback if it is morning
-			onAfternoon 	: function(){}	// callback if it is afternoon
+			onNight			: function(){
+				$('body').addClass(settings.nightClass);
+			},	// callback if it is night
+			onDawn			: function(){
+				$('body').addClass(settings.dawnClass);
+			},	// callback if it is dawn
+			onMorning		: function(){
+				$('body').addClass(settings.morningClass);
+			},	// callback if it is morning
+			onAfternoon 	: function(){
+				$('body').addClass(settings.afternoonClass);
+			}	// callback if it is afternoon
 		}, arguments[0] || {});
 		
 		return this.each(function() {
@@ -46,6 +56,7 @@
 			dawnEndH 		= morningStartH-1;
 			morningEndH 	= afternoonStartH-1;
 			afternoonEndH 	= nightStartH-1;
+
 			if(nightStartH == 0) {
 				afternoonEndH 	= 23;
 			}
@@ -77,7 +88,6 @@
 					if(settings.debug == true) {
 						window.console && console.log("It's night now");
 					}
-					$this.addClass(settings.nightClass);
 					settings.onNight.call(this);
 			}
 			// dawn
@@ -92,7 +102,6 @@
 					if(settings.debug == true) {
 						window.console && console.log("It's dawn now");
 					}
-					$this.addClass(settings.dawnClass);
 					settings.onDawn.call(this);
 			}
 			// morning
@@ -107,7 +116,6 @@
 					if(settings.debug == true) {
 						window.console && console.log("It's morning now");
 					}
-					$this.addClass(settings.morningClass);
 					settings.onMorning.call(this);
 			}
 			// afternoon
@@ -122,7 +130,6 @@
 					if(settings.debug == true) {
 						window.console && console.log("It's afternoon now");
 					}
-					$this.addClass(settings.afternoonClass);
 					settings.onAfternoon.call(this);
 			}
 		});
